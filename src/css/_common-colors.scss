@@ -1,0 +1,7 @@
+$primary-color: #1abc9c;
+$secondary-color: #212529;
+$secondary-color-light: lighten($secondary-color, 15%);
+$secondary-color-light35: lighten($secondary-color, 35%);
+$icon-colors: #ffffff;
+$primary-color-light: lighten($primary-color, 20%);
+$filter-color: lighten($secondary-color, 35%);

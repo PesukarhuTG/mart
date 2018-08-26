@@ -1,0 +1,231 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bold, h2 {
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+h2 {
+  color: #434b53;
+  text-transform: uppercase;
+  font-size: 42px;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.flex-container, .container, header, header .container, .new-collection .products, .new-collection .products .product-image-with-hover .product-image-actions, .new-collection .products .product-image-with-hover .product-button, .new-collection .products .product-title-and-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.small-text {
+  font-size: 13px;
+  color: #212529;
+}
+
+header {
+  height: 45px;
+}
+
+header .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 13px;
+}
+
+header .container .header-left-part .header-phone {
+  margin-right: 29px;
+}
+
+header .container .header-right-part a {
+  margin-left: 29px;
+  text-decoration: unset;
+}
+
+header .container .header-right-part a:hover {
+  text-decoration: underline;
+}
+
+header .container .header-right-part a:first-child {
+  margin-left: 0;
+}
+
+.navigation {
+  height: 83px;
+}
+
+.carousel {
+  height: 554px;
+}
+
+.advantages {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  color: #212529;
+}
+
+.advantages .advantage {
+  text-align: center;
+}
+
+.advantages .advantage .advantage-title {
+  margin: 47px 0 19px 0;
+}
+
+.advantages .advantage .advantage-text {
+  padding: 0 8px;
+}
+
+.green-stripes {
+  width: 152px;
+  margin: 16px 0 72px 0;
+}
+
+.green-stripes .stripe {
+  width: 100%;
+  height: 6px;
+  margin: 2px 0;
+}
+
+.green-stripes .stripe.thin-stripe {
+  height: 2px;
+  margin: 0;
+}
+
+.new-collection {
+  height: 622px;
+  padding: 84px 0;
+}
+
+.new-collection .products {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.new-collection .products .product-item {
+  width: 236px;
+}
+
+.new-collection .products .product-image-with-hover {
+  position: relative;
+  height: 262px;
+}
+
+.new-collection .products .product-image-with-hover .product-image {
+  width: 100%;
+  height: 100%;
+  background-color: #cd00cd;
+}
+
+.new-collection .products .product-image-with-hover .product-image-actions {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.new-collection .products .product-image-with-hover .product-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+}
+
+.new-collection .products .product-image-with-hover .product-button.wide {
+  width: 156px;
+}
+
+header {
+  background-color: #1abc9c;
+}
+
+header .small-text {
+  color: white;
+}
+
+.advantages .advantage:hover .advantage-icon, .advantages .advantage:hover .advantage-title {
+  color: #1abc9c;
+}
+
+.advantages .advantage .advantage-icon {
+  font-size: 60px;
+}
+
+.advantages .advantage .advantage-title {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.advantages .advantage .advantage-text {
+  line-height: 22px;
+}
+
+.stripe {
+  background-color: #1abc9c;
+}
+
+.new-collection {
+  background-color: aliceblue;
+}
+
+.product-item .product-image-actions {
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.product-item .product-button {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.product-item .product-button:hover {
+  background-color: #1abc9c;
+}
+
+.product-item:hover .product-image-actions {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-size: 1480px auto;
+  background-position-x: center;
+}
+
+
+/*# sourceMappingURL=main.css.map */
