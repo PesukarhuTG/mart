@@ -13,7 +13,7 @@ h2 {
   letter-spacing: -2px;
   margin: 0; }
 
-.flex-container, .container, header, header .container, .new-collection .products, .new-collection .products .product-image-with-hover .product-image-actions, .new-collection .products .product-image-with-hover .product-button, .new-collection .products .product-title-and-price, .featured-products .products, .featured-products .products .product-image-with-hover .product-image-actions, .featured-products .products .product-image-with-hover .product-button, .featured-products .products .product-title-and-price {
+.flex-container, .container, header, header .container, .new-collection .products, .new-collection .products .product-image-with-hover .product-image-actions, .new-collection .products .product-image-with-hover .product-button, .new-collection .products .product-title-and-price, .featured-products .products, .featured-products .products .product-image-with-hover .product-image-actions, .featured-products .products .product-image-with-hover .product-button, .featured-products .products .product-title-and-price, .contact-info .networks, .contact-info .networks .network {
   display: flex;
   align-items: center; }
 
@@ -23,7 +23,8 @@ h2 {
 .container {
   width: 100%;
   max-width: 1050px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  align-items: center; }
 
 .small-text {
   font-size: 13px;
@@ -153,15 +154,21 @@ header .container {
 
 .want-to-see {
   border-radius: 2px;
-  border: 1px solid #bfbdbd; }
+  border: 1px solid #bfbdbd;
+  padding-top: 3px;
+  margin-top: 2px;
+  margin-bottom: 0px; }
   .want-to-see:hover {
     border: none; }
 
 .filter-item {
   font-size: 15px; }
 
+.block1 {
+  margin-top: 96px; }
+
 .featured-products {
-  padding-top: 87px;
+  padding-top: 82px;
   padding-bottom: 83px;
   color: #212529; }
   .featured-products .products {
@@ -199,15 +206,15 @@ header .container {
   margin-top: 29px; }
 
 .season-sale {
-  height: 373px; }
+  height: 372px; }
 
 .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform: translateY(50%);
-  line-height: 0px;
-  padding-top: 55px; }
+  font-size: 52px;
+  text-transform: uppercase;
+  padding: 155px 0 7px 0;
+  font-family: Arial;
+  color: #ffffff;
+  font-weight: bold; }
 
 .customer-review {
   margin-top: 57px; }
@@ -231,7 +238,7 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 31px; }
+  margin: 31 10px; }
   .circle-img-min:hover {
     border: 5px solid #1abc9c; }
 
@@ -241,13 +248,12 @@ header .container {
   margin-top: 15px;
   line-height: 2px; }
 
-.olivia {
-  font-weight: bold; }
-  .olivia:hover {
-    color: #1abc9c; }
+.name-min-img {
+  font-weight: bold;
+  color: #1abc9c; }
 
 .newsletter-block {
-  margin-top: 74px;
+  margin-top: 29px;
   height: 430px; }
 
 .news-letter-in {
@@ -268,7 +274,7 @@ header .container {
       margin: 0; }
 
 .input-block {
-  padding-top: 25px;
+  margin-top: 25px;
   display: flex; }
 
 .input-news {
@@ -282,15 +288,17 @@ header .container {
   outline: none; }
 
 .newsletter-button {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 40px;
   width: 85px;
   height: 55px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border: 2px solid white;
-  margin-top: 0; }
-
-.fa-caret-right {
-  font-size: 10px; }
+  margin: 0 auto; }
+  .newsletter-button:hover {
+    background-color: #55e7ca; }
 
 .partners {
   display: flex;
@@ -339,28 +347,67 @@ header .container {
 .social-icons {
   display: flex; }
 
-.input-name-email {
-  padding-top: 9px; }
+.contact-info {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 10px; }
+  .contact-info .dokan {
+    font-size: 67px;
+    margin: 0;
+    letter-spacing: -2px; }
+  .contact-info .contact-info-header {
+    margin: 10px;
+    margin-left: 0; }
+  .contact-info .contact-info-text {
+    margin-top: 3px;
+    margin-bottom: 25px; }
+  .contact-info .contact-data {
+    margin: 1px; }
+  .contact-info .networks .network {
+    justify-content: center;
+    border: 1px solid white;
+    height: 28px;
+    width: 28px;
+    margin-top: 13px;
+    margin-right: 9px;
+    cursor: pointer; }
 
-.input-subject-www {
-  padding-top: 28px; }
+.contact-form {
+  flex: 1; }
+  .contact-form .form {
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: 1fr 1fr;
+    height: 285px;
+    padding: 2px 20px; }
+    .contact-form .form input,
+    .contact-form .form textarea {
+      height: 45px;
+      padding: 10px;
+      resize: none; }
+    .contact-form .form textarea {
+      grid-column: span 2;
+      height: 110px;
+      width: 100%; }
+    .contact-form .form .footer-button {
+      height: 47px;
+      width: 140px;
+      border-radius: 3px;
+      background-color: #1abc9c;
+      border: none;
+      text-transform: uppercase;
+      margin: 0; }
+      .contact-form .form .footer-button:hover {
+        background-color: #55e7ca; }
 
-.input-message {
-  padding-top: 3px; }
-
-.input-min-size {
-  width: 193px;
-  margin-right: 20px; }
-
-.input-big-size {
-  width: 410px;
-  height: 110px;
-  margin-top: 25px;
-  margin-bottom: 25px; }
+.footer-date {
+  border: 1px solid white; }
 
 .header-img {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .text-header {
   display: flex;
@@ -372,7 +419,7 @@ header .container {
   color: white;
   font-size: 12px;
   border: 1px solid #55e7ca;
-  margin-top: 24px;
+  /*margin-top: 24px;*/
   padding: 13px 27px 13px 27px; }
 
 /*вокруг 8 описали круг и зеленым */
@@ -395,6 +442,15 @@ header .container {
 .all-counter {
   margin-left: 17px;
   margin-top: -35px; }
+
+.arrow {
+  height: 100px;
+  width: 100px;
+  margin-right: 0; }
+
+.three-min-faces {
+  display: flex;
+  justify-content: center; }
 
 header {
   background-color: #1abc9c; }
@@ -487,15 +543,14 @@ h1 {
 
 .sale-text {
   color: white;
-  opacity: 0.5;
-  font-size: 26px; }
+  font-size: 31px; }
 
 .text-under-circle {
   text-align: center;
   color: grey;
   font-size: 13px;
   padding-top: 7px;
-  line-height: 19px; }
+  line-height: 22px; }
 
 .wstripe {
   background-color: white; }
@@ -508,7 +563,7 @@ h1 {
 .our-partners {
   background-color: aliceblue;
   padding-top: 98px;
-  height: 460px; }
+  height: 467px; }
 
 .partner-item-img {
   height: 138px;
@@ -528,7 +583,7 @@ h1 {
   margin-bottom: 7px; }
 
 .latest-news-stripe {
-  width: 130px;
+  width: 125px;
   height: 4px;
   background-color: #1abc9c;
   margin: 0; }
@@ -548,7 +603,8 @@ h1 {
   background-color: #1abc9c;
   color: white;
   outline: none;
-  border: none; }
+  border: none;
+  margin: 0; }
 
 .get-in-touch-title {
   color: white; }
@@ -563,7 +619,7 @@ h1 {
   color: white;
   margin: 0;
   font-size: 16px;
-  padding-top: 12px; }
+  margin-top: 12px; }
 
 .Lorem {
   color: white;
@@ -620,7 +676,7 @@ h1 {
 .dresses {
   color: white;
   font-size: 43px;
-  margin: 45px 0 0 0;
+  margin: 85px 0 0 0;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 100; }

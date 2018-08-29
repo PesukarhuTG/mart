@@ -1,9 +1,5 @@
-function isEven(N)
- {if (N%2==0) return true;
-    else return false;}
+function min(x, y) 
+{x < y ? console.log(x) : console.log(y)}
 
-console.log(isEven(50));
-console.log(isEven(75));
-console.log(isEven(-1));
-console.log(isEven(0));
-console.log(isEven(1));
+min(0, 10);
+min(0, -10);

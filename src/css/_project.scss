@@ -174,6 +174,10 @@ header {
 .want-to-see {
     border-radius: 2px;
     border: 1px solid #bfbdbd;
+    padding-top: 3px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+
        &:hover {border: none;}
 }
 
@@ -181,8 +185,10 @@ header {
     font-size: 15px;
             }
 
+.block1 {margin-top: 96px;}
+
 .featured-products {  
-    padding-top: 87px;
+    padding-top: 82px;
     padding-bottom: 83px;
     color: $secondary-color;
 
@@ -243,17 +249,17 @@ header {
         }
 
 .season-sale {
-    height: 373px;
+    height: 372px;
              }
 
 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateY(50%);
-    line-height: 0px;
-    padding-top: 55px;
-     }
+    font-size: 52px;
+    text-transform: uppercase;
+    padding: 155px 0 7px 0;
+    font-family: Arial;
+    color: #ffffff;
+    font-weight: bold;
+    }
 
 .customer-review {
     margin-top: 57px;
@@ -279,7 +285,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 31px;
+    margin: 31 10px;
       &:hover {border: 5px solid $primary-color;}      
 }
 
@@ -289,12 +295,12 @@ header {
     margin-top: 15px;
     line-height: 2px;}
 
-.olivia {font-weight: bold;
-                 &:hover {color: $primary-color;}
+.name-min-img {font-weight: bold;
+    color: $primary-color;
         }
 
 .newsletter-block {
-    margin-top: 74px;
+    margin-top: 29px;
     height: 430px;
              }
 
@@ -322,7 +328,7 @@ header {
         }
     }
 .input-block {
-    padding-top: 25px;
+    margin-top: 25px;
     display: flex;
 }
 .input-news {
@@ -336,17 +342,18 @@ header {
     outline: none;
 }
 
-.newsletter-button {
+.newsletter-button {color:#ffffff;
+    font-weight: bold;
+    font-size: 40px;
     width: 85px;
     height: 55px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     border: 2px solid white;
-    margin-top: 0;
+    margin: 0 auto;
+     &:hover {background-color: $primary-color-light;}
+     
 }
-
-.fa-caret-right {font-size: 10px;}
-
 
 .partners {
     display: flex;
@@ -402,20 +409,79 @@ header {
 
 .social-icons {display: flex;}
 
-.input-name-email {padding-top: 9px;}
-.input-subject-www {padding-top: 28px;}
-.input-message {padding-top: 3px;}
+.contact-info {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 10px;
+        .dokan {
+            font-size: 67px;
+            margin: 0;
+            letter-spacing: -2px;
+        }
+        .contact-info-header {
+            margin: 10px;
+            margin-left: 0;
+        }
+        .contact-info-text {
+            margin-top: 3px;
+            margin-bottom: 25px;
+        }
+        .contact-data {
+            margin: 1px;
+        }
+        .networks {
+            @extend .flex-container;
+            .network {
+                @extend .flex-container;
+                justify-content: center;
+                border: 1px solid white;
+                height: 28px;
+                width: 28px;
+                margin-top: 13px;
+                margin-right: 9px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .contact-form {
+        flex: 1;
+        .form {display: grid;
+            grid-gap: 28px;
+            grid-template-columns: 1fr 1fr;
+            height: 285px;
+            padding: 2px 20px;
+    
+            input,
+            textarea {
+                height: 45px;
+                padding: 10px;
+                resize: none;
+            }
+            textarea {
+                grid-column: span 2;
+                height: 110px;
+                width: 100%;
+            }
+            .footer-button {
+                height: 47px;
+                width: 140px;
+                border-radius: 3px;
+                background-color: $primary-color;
+                border: none;
+                text-transform: uppercase;
+                margin: 0;
+                   &:hover {background-color: $primary-color-light;}
+            }
+        }
+    }
 
-.input-min-size {width: 193px;
-    margin-right: 20px;}
-
-.input-big-size {width: 410px;
-    height: 110px;
-    margin-top: 25px;
-    margin-bottom: 25px;}
+.footer-date {border: 1px solid white;}
 
 .header-img {display: flex;
-justify-content: space-between;}
+justify-content: space-between;
+align-items: center;}
 
 .text-header {display: flex;
 flex-direction: column;
@@ -425,7 +491,7 @@ justify-content: center;}
 .header-button {     color: white;
     font-size: 12px;
     border: 1px solid $primary-color-light;
-    margin-top: 24px;
+    /*margin-top: 24px;*/
     padding: 13px 27px 13px 27px;
 }
 
@@ -451,3 +517,15 @@ flex-direction: column;
 .all-counter {
     margin-left: 17px;
     margin-top: -35px;}
+
+    
+.arrow {
+    height: 100px;
+    width: 100px;
+    margin-right: 0;}
+
+
+.three-min-faces {
+    display: flex;
+    justify-content: center;
+}
