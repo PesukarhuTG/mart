@@ -180,7 +180,9 @@ h1 {
     color: white;
     outline: none;
     border: none;
-    margin: 0;}
+    margin: 0;
+       &:hover {background-color: $primary-color-light;}
+}
 
 .get-in-touch-title {color: white;}
 

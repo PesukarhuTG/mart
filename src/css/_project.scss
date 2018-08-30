@@ -174,11 +174,12 @@ header {
 .want-to-see {
     border-radius: 2px;
     border: 1px solid #bfbdbd;
-    padding-top: 3px;
+    padding: 3px 5px 4px 5px;
     margin-top: 2px;
     margin-bottom: 0px;
 
-       &:hover {border: none;}
+      /* &:hover {border: none;}*/
+      &:hover {border: 1px solid transparent;}
 }
 
 .filter-item {
@@ -497,7 +498,8 @@ justify-content: center;}
 
 
 /*вокруг 8 описали круг и зеленым */
-.total-number-all {    border: 1px solid #333333;
+.total-number-all {
+    border: 1px solid #333333;
     border-radius: 50%;
     color: #1abc9c;
     width: 36px;
@@ -506,17 +508,30 @@ justify-content: center;}
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    position: absolute;
+    top: -5%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
 }
 
 /* и 8 и АЛЛ лежат здесь*/
 .counter-plus-all {
 display: flex;
-flex-direction: column;
+/*flex-direction: column;*/
+justify-content: flex-end;
 }
 
 .all-counter {
     margin-left: 17px;
-    margin-top: -35px;}
+    margin-top: -35px;
+    position: relative;
+    width: 36;
+    height: 36;
+    flex-shrink: 0;
+    align-self: flex-end;
+    transform: translateX(50px);
+}
 
     
 .arrow {
