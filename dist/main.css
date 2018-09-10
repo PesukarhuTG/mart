@@ -235,6 +235,11 @@ header .container {
 .customer-review {
   margin-top: 57px; }
 
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .circle-img {
   width: 210px;
   height: 210px;
@@ -269,9 +274,23 @@ header .container {
   color: #1abc9c; }
 
 .three-min-faces {
+  overflow: hidden;
+  margin-top: 20px;
   display: flex;
-  justify-content: center;
-  margin-top: 31px; }
+  justify-content: center; }
+
+.three-min-faces button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0; }
+  .three-min-faces button:hover {
+    background-color: transparent; }
+
+.tab-content {
+  display: none; }
 
 .tab-container .tab-content {
   display: flex;
